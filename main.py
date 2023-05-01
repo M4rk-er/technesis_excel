@@ -90,8 +90,8 @@ def handle_excel_file(message):
 
 
 if __name__ == '__main__':
-    # try:
+    try:
         bot.polling()
-    # except Exception as e:
-    #     print(f'Ошибка бота - {e}')
-    #     bot.polling()
+    except Exception as e:
+        print(f'Ошибка бота - {e}')
+        bot.polling()
